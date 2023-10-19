@@ -1,6 +1,6 @@
 # 🚘 Responsive Car website
-## [Watch it on youtube](https://rasan3-1416.github.io/Elecar-car-website/)
-### 🚘 Responsive Car website
+## [Visit Live Site](https://rasan3-1416.github.io/Elecar-car-website/)
+### 🚘 Elecar - Car website
 
 - Responsive Car website Using HTML CSS & JavaScript
 - Contains animations when scrolling.
