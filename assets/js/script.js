@@ -21,8 +21,16 @@ function linkAction() {
 }
 navLink.forEach(eachLink => eachLink.addEventListener('click', linkAction))
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-
-
+const header = document.getElementById('header')
+function scrollHeaderAction() {
+    // When the scroll amount is bigger the 50 viewport height then add the scroll-header class in the header tag
+    if(this.scrollY >= 50) {
+        header.classList.add('scroll-header')
+    }else {
+        header.classList.remove('scroll-header')
+    }
+}
+window.addEventListener('scroll', scrollHeaderAction)
 /*=============== POPULAR SWIPER ===============*/
 
 
