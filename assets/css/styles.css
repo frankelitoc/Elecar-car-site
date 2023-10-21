@@ -458,7 +458,12 @@ img {
 }
 
 /* Swiper class */
-
+.swiper-pagination-bullet {
+  background: var(--white-color);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
 
 /*=============== FEATURES ===============*/
 

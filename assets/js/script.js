@@ -32,7 +32,24 @@ function scrollHeaderAction() {
 }
 window.addEventListener('scroll', scrollHeaderAction)
 /*=============== POPULAR SWIPER ===============*/
-
+let swiperPopular = new Swiper('.popular__container', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 24,
+    grabCursor: true,
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },1024: {
+            spaceBetween: 46,
+        }
+    }
+})
 
 /*=============== MIXITUP FILTER FEATURED ===============*/
 
