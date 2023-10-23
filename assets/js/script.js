@@ -60,6 +60,7 @@ let mixerFeatured = mixitup('.featured__content', {
         duration: 300
     }
 })
+/* Link active featured */ 
 const  featuredButton = document.querySelectorAll('.featured__item')
 function activeFeaturedButton() {
     featuredButton.forEach((previousButton) => {
@@ -70,11 +71,19 @@ function activeFeaturedButton() {
 featuredButton.forEach((currentButton)=> {
     currentButton.addEventListener('click', activeFeaturedButton)
 })
-/* Link active featured */ 
-
 
 /*=============== SHOW SCROLL UP ===============*/ 
-
+function scrollUp() {
+    const scrollUp = document.getElementById('scroll-up')
+    // when the viewport height is more than 350 add the show-scroll class 
+    if(this.scrollY >= 350) {
+        scrollUp.classList.add('show-scroll')
+    }else {
+        // when the viewport height is less than 350 remove the show-scroll class
+        scrollUp.classList.remove('show-scroll')
+    }
+}
+window.addEventListener('scroll', scrollUp)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
