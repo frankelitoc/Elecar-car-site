@@ -52,8 +52,24 @@ let swiperPopular = new Swiper('.popular__container', {
 })
 
 /*=============== MIXITUP FILTER FEATURED ===============*/
-
-
+let mixerFeatured = mixitup('.featured__content', {
+    selectors: {
+        target: '.featured__card'
+    },
+    animation: {
+        duration: 300
+    }
+})
+const  featuredButton = document.querySelectorAll('.featured__item')
+function activeFeaturedButton() {
+    featuredButton.forEach((previousButton) => {
+        previousButton.classList.remove('active-featured')
+    })
+    this.classList.add('active-featured')
+}
+featuredButton.forEach((currentButton)=> {
+    currentButton.addEventListener('click', activeFeaturedButton)
+})
 /* Link active featured */ 
 
 

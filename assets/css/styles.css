@@ -574,6 +574,7 @@ img {
   background-color: var(--container-color);
   padding: 2.5rem 1.5rem 1.5rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 .featured__card .shape__smaller {
   position: absolute;
@@ -618,8 +619,13 @@ img {
   transform: translateX(-0.25rem) scale(1.025);
 }
 /* Active link featured */
-
-
+.active-featured {
+  background: var(--first-color);
+}
+.active-featured span,
+.active-featured img {
+  opacity: 1;
+}
 /*=============== OFFER ===============*/
 
 
