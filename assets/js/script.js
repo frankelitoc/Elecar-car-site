@@ -104,3 +104,38 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true
+})
+
+// Home
+sr.reveal('.home__title')
+sr.reveal('.home__subtitle', {delay: 500})
+sr.reveal('.home__elec', {delay: 600})
+sr.reveal('.home__img', {delay: 800})
+sr.reveal('.home__car-data', {delay: 900, interval: 100, origin: 'bottom'})
+sr.reveal('.home__button', {delay: 1000, origin: 'bottom'})
+// About
+sr.reveal('.about__group', {origin: 'left'})
+sr.reveal('.about__data', {origin: 'right'})
+// Popular
+sr.reveal('.popular__container')
+// Features
+sr.reveal('.features__img')
+sr.reveal('.features__map', {origin: 'bottom',delay: 600})
+sr.reveal('.features__card', {interval: 300})
+// Featured
+sr.reveal('.featured__filters')
+sr.reveal('.featured__card', {interval: 100})
+// Offer
+sr.reveal('.offer__data', {origin: 'left'})
+sr.reveal('.offer__img', {origin: 'right'})
+// Logos
+sr.reveal('.logos__content', {interval: 100})
+// Footer
+sr.reveal('.footer__content', {interval: 100})
+sr.reveal('.footer__copy', {origin: 'bottom'})
